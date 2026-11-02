@@ -10,10 +10,17 @@
     {
       "name": "humanize-ai",
       "displayName": "Humanize AI",
+      "version": "0.5.0",
       "source": "./",
       "description": "Finds AI-writing tells and rewrites text so it reads like a person wrote it, while keeping facts, names, numbers, quotes, and the writer's voice intact.",
       "category": "writing",
-      "tags": ["writing", "editing", "humanizer", "ai-writing", "content"]
+      "tags": [
+        "writing",
+        "editing",
+        "humanizer",
+        "ai-writing",
+        "content"
+      ]
     }
   ]
 }
