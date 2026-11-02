@@ -1,0 +1,66 @@
+{
+  "prompts": [
+    {
+      "id": "cfcbc7d0fbaffd055a3ce762c5cce11e",
+      "title": "Humanize AI",
+      "description": "Find AI-writing tells in a draft and rewrite it so it reads like a person wrote it, with every fact kept. Pick a step, paste your content, and send.",
+      "content": "# Humanize AI\n\nRun /humanize-ai on my content, limited to the step I picked below. Step mapping: Full workflow runs /humanize-ai; Detect only runs /humanize-ai:ai-pattern-detector; Rewrite only runs /humanize-ai:ai-pattern-remover; Audit only runs /humanize-ai:humanize-ai-auditor. Run only that step and don't chain into the next one. Every run ends with the auditor's scratchpad, scoped to that step.\n\n* **Step:** `{{step}}`\n* **Content:** `{{content}}`\n* **Content Type:** `{{content_type}}`\n* **Voice Sample:** `{{voice_sample}}`\n* **Notes:** `{{notes}}`\n\nKeep every fact, name, number, quote, and date exactly as written unless my notes ask for a change. If something you need is missing, ask for it once in a short message, then continue. For Rewrite only, use findings already in this chat or in my notes; if there are none, ask whether to run Detect first.",
+      "variables": {
+        "step": {
+          "type": "Radio",
+          "label": "Step",
+          "placeholder": "step",
+          "context": "Full workflow finds the AI tells, rewrites what is safe to change, and runs the final audit. Detect only lists the tells and changes nothing. Rewrite only fixes tells already found in this chat. Audit only runs the final checklist and fact check on the text as it is.",
+          "maxLength": "",
+          "required": true,
+          "options": "Full Workflow\nDetect Only\nRewrite Only\nAudit Only"
+        },
+        "content": {
+          "type": "Textarea",
+          "label": "Content",
+          "placeholder": "Paste the draft here, or write: the blog post attached in this message.",
+          "context": "The text to check or rewrite. Paste it, or say where it is in this chat or your project files.",
+          "maxLength": "",
+          "required": true,
+          "options": ""
+        },
+        "content_type": {
+          "type": "Radio",
+          "label": "Content Type",
+          "placeholder": "content_type",
+          "context": "Decides which checks apply. A two-line caption and a 2,000-word article get different treatment, and story checks only run on fiction or story-driven pieces.",
+          "maxLength": "",
+          "required": false,
+          "options": "Blog Post or Article\nSocial Post or Caption\nEmail or Reply\nSales or Landing Page Copy\nFiction or Story\nTechnical or Reference\nNot Sure"
+        },
+        "voice_sample": {
+          "type": "Textarea",
+          "label": "Voice Sample",
+          "placeholder": "Paste two or three paragraphs you wrote yourself.",
+          "context": "Optional. Your own earlier writing, so the rewrite matches your sentence length, word choice, and punctuation habits, including dashes if you really use them.",
+          "maxLength": 6000,
+          "required": false,
+          "options": ""
+        },
+        "notes": {
+          "type": "Textarea",
+          "label": "Notes",
+          "placeholder": "Keep the pricing table as is. Drafted with Claude. Our brand never uses exclamation marks.",
+          "context": "Optional. Facts that must not change, which AI model drafted the text, brand rules, words to avoid, or findings from an earlier detect run.",
+          "maxLength": 3000,
+          "required": false,
+          "options": ""
+        }
+      },
+      "lastModified": "2026-10-05T07:38:50.617Z",
+      "created": "2026-10-05T07:38:50.617Z"
+    }
+  ],
+  "metadata": {
+    "exportDate": "2026-10-05T07:38:50.617Z",
+    "version": "2.0",
+    "format": "prompt-builder-plain",
+    "count": 1,
+    "checksum": "-9vapbe"
+  }
+}

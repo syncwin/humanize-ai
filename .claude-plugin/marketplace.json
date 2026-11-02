@@ -1,0 +1,19 @@
+{
+  "name": "syncwin-humanize-ai",
+  "description": "Humanize AI by SyncWin: find AI-writing tells and rewrite text so it reads like a person wrote it, with facts locked.",
+  "owner": {
+    "name": "SyncWin",
+    "email": "support@syncwin.com",
+    "url": "https://syncwin.com"
+  },
+  "plugins": [
+    {
+      "name": "humanize-ai",
+      "displayName": "Humanize AI",
+      "source": "./",
+      "description": "Finds AI-writing tells and rewrites text so it reads like a person wrote it, while keeping facts, names, numbers, quotes, and the writer's voice intact.",
+      "category": "writing",
+      "tags": ["writing", "editing", "humanizer", "ai-writing", "content"]
+    }
+  ]
+}

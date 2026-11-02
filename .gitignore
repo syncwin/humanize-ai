@@ -1,0 +1,22 @@
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Personal customizations file (created by scripts/setup.sh from the tracked template)
+skills/humanize-ai/assets/user-customizations.md
+
+# Local eval results from `claude plugin eval`
+evals/results/
+
+# Build output: release packages go on GitHub Releases, never in the repo
+dist/
+*.zip
+*.plugin

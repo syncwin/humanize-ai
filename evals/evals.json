@@ -1,0 +1,40 @@
+{
+  "trigger": {
+    "should": [
+      "humanize this blog post for me",
+      "make this sound less like ChatGPT wrote it",
+      "does this read as AI-generated?",
+      "remove the AI tells from this email before I send it",
+      "this LinkedIn post sounds robotic, can you fix it without changing the numbers",
+      "audit this landing page copy for AI writing patterns",
+      "will this pass an AI detector?",
+      "rewrite the parts you flagged as AI-sounding",
+      "check whether your AI-writing sources are out of date"
+    ],
+    "should_not": [
+      "write a blog post about web hosting",
+      "summarize this PDF",
+      "translate this paragraph into Hindi",
+      "fix the grammar in this sentence",
+      "explain how AI detectors work in general",
+      "draft a cold email to a new client",
+      "what is perplexity in machine learning",
+      "make this paragraph shorter"
+    ]
+  },
+  "trigger_heldout": {
+    "should": [
+      "de-AI this newsletter intro",
+      "my client says this case study feels AI-written, what's giving it away?",
+      "run the humanize checklist on this final draft",
+      "make my product description sound like a person wrote it, keep the specs exact"
+    ],
+    "should_not": [
+      "write a product description for a water bottle",
+      "proofread my resume",
+      "turn these notes into a slide deck",
+      "what's the best AI writing tool"
+    ]
+  },
+  "_note": "Trigger prompt sets for description tuning. Task cases live in sibling directories in the official `claude plugin eval` layout (prompt.md + graders/). Run: claude plugin eval . --runs 1"
+}
