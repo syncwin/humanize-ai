@@ -4,7 +4,7 @@ description: Humanize AI's entry point, answering to /humanize-ai. Use when some
 license: MIT
 metadata:
   displayName: Humanize AI
-  version: '0.5.0'
+  version: '0.5.1'
   author: "@wasimness"
   company: SyncWin
 ---

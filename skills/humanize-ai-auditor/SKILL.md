@@ -4,7 +4,7 @@ description: Third and final stage of Humanize AI, and the one that always runs.
 license: MIT
 metadata:
   displayName: Humanize AI Auditor
-  version: '0.5.0'
+  version: '0.5.1'
   author: "@wasimness"
   company: SyncWin
 ---

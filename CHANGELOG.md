@@ -1,5 +1,10 @@
 # Changelog: Humanize AI (humanize-ai)
 
+## 0.5.1: Update
+
+**Changed**
+- Security audit (light): no hooks, connectors, MCP servers or network calls; both shell scripts are quoted and run with set -euo pipefail; fetched text is already treated as data. No code change needed.
+
 ## v0.5.0: 2026-10-05 (public beta)
 
 **First public beta. Folded in three new research sources, fixed every issue the pre-release audit found, and prepared the plugin for GitHub and Anthropic's directory.** Minor bump: one new knowledge source and new detection and rewriting capability; the `/humanize-ai` entry point and the three stage skill names are unchanged. Still pre-1.0.
