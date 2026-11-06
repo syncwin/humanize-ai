@@ -5,6 +5,11 @@
 **Added**
 - GitHub Actions workflow `release-plugin.yml` builds `humanize-ai.plugin` and attaches it to each release for a one-click download link (README).
 
+## 0.5.2: Update
+
+**Changed**
+- Standing rule: research before building. Check current official docs and widely recommended, secure practice before choosing an approach, file, tool, config or dependency; cite the source; mark anything unverified; never guess; keep research scoped to the task.
+
 ## 0.5.1: Update
 
 **Changed**

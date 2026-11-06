@@ -4,7 +4,7 @@ description: Humanize AI's entry point, answering to /humanize-ai. Use when some
 license: MIT
 metadata:
   displayName: Humanize AI
-  version: '0.5.1'
+  version: '0.5.2'
   author: "@wasimness"
   company: SyncWin
 ---
@@ -74,6 +74,7 @@ The aim is writing that serves human readers. Detector scores are a side effect,
 - Don't promise that text will pass a detector. Scores are noisy (Source 4).
 - When the person says the text goes where AI use is banned or must be disclosed (a graded assignment, a Wikipedia article, a publication with a disclosure rule, public-interest publishing under EU AI Act Article 50 without editorial review), say once, plainly, that editing improves the writing but doesn't change those rules. Then offer the quality edit.
 - Fix the underlying problem, not only the sign: unsupported claims get sourced or cut, and suspect citations get flagged, never polished into something that looks real.
+- **Research before building (every stage).** Before choosing an approach, file, tool, config or dependency, check current official docs and widely recommended, secure practice; cite the source in the docs or brief; mark anything unverified; never guess. Keep research scoped to what the task needs (smallest complete change).
 
 ## Deliverable
 

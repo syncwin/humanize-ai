@@ -4,7 +4,7 @@ Humanize AI is a Claude plugin that finds the patterns that make a draft read as
 
 **Download:** [humanize-ai.plugin](https://github.com/syncwin/humanize-ai/releases/latest/download/humanize-ai.plugin) (always the latest release)
 
-**Version** 0.5.1 (public beta) · **Author** @wasimness · **Company** SyncWin · **Contact** support@syncwin.com · **License** MIT (Wikipedia-derived material: CC BY-SA 4.0)
+**Version** 0.5.2 (public beta) · **Author** @wasimness · **Company** SyncWin · **Contact** support@syncwin.com · **License** MIT (Wikipedia-derived material: CC BY-SA 4.0)
 
 ## Why it exists
 
