@@ -2,6 +2,8 @@
 
 Humanize AI is a Claude plugin that finds the patterns that make a draft read as AI-written, then rewrites only what is safe to change, so the text sounds like a person wrote it. Your facts stay put. Names, numbers, quotes, and dates are listed before the rewrite starts and checked against the original after it ends.
 
+**Download:** [humanize-ai.plugin](https://github.com/syncwin/humanize-ai/releases/latest/download/humanize-ai.plugin) (always the latest release)
+
 **Version** 0.5.1 (public beta) · **Author** @wasimness · **Company** SyncWin · **Contact** support@syncwin.com · **License** MIT (Wikipedia-derived material: CC BY-SA 4.0)
 
 ## Why it exists

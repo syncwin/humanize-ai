@@ -1,5 +1,10 @@
 # Changelog: Humanize AI (humanize-ai)
 
+## Unreleased
+
+**Added**
+- GitHub Actions workflow `release-plugin.yml` builds `humanize-ai.plugin` and attaches it to each release for a one-click download link (README).
+
 ## 0.5.1: Update
 
 **Changed**
