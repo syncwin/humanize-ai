@@ -11,7 +11,7 @@ __MACOSX/
 *.log
 
 # Personal customizations file (created by scripts/setup.sh from the tracked template)
-skills/humanize-ai/assets/user-customizations.md
+skills/humanizeai/assets/user-customizations.md
 
 # Local eval results from `claude plugin eval`
 evals/results/

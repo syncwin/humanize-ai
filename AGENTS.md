@@ -2,7 +2,7 @@
 
 Humanize AI Claude plugin: detect AI-writing tells, rewrite, and audit while keeping facts, names, numbers and quotes intact.
 
-**Structure:** `skills/` (`humanize-ai`, `ai-pattern-detector`, `ai-pattern-remover`, `humanize-ai-auditor`), `knowledge/` (patterns by source), `scripts/setup.sh`, `evals/`.
+**Structure:** `skills/` (`humanizeai`, `ai-pattern-detector`, `ai-pattern-remover`, `humanize-ai-auditor`), `knowledge/` (patterns by source), `scripts/setup.sh`, `evals/`.
 
 ## Commands
 - First clone: `bash scripts/setup.sh` (creates the git-ignored personal customizations file); `scripts/update.sh` to update.
@@ -24,6 +24,7 @@ Humanize AI Claude plugin: detect AI-writing tells, rewrite, and audit while kee
 - Keep em dashes and en dashes out of skills, docs and examples, except where a rule names the characters.
 - A fact that changes during a rewrite is a high-priority bug.
 - Edit the knowledge file that owns a rule; never restate it in a second file. Update its "Last verified" date when you check a source. Paraphrase sources; cite new ones in `NOTICE.md`.
+- Skills that run scripts copy them once per session into the working folder (e.g. `./tools/`) and run from there; never put a `/root/.claude` or `~/.claude` path in a shell command.
 - Version bumps: patch for a fix, minor for a new pattern, file or source.
 
 ## Model routing
