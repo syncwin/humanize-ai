@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Pulls the latest version of a cloned Humanize AI checkout. Safe to run any time:
-# skills/humanize-ai/assets/user-customizations.md is git-ignored, so git pull never touches it.
+# skills/humanizeai/assets/user-customizations.md is git-ignored, so git pull never touches it.
 set -euo pipefail
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$DIR"
 
-if [ -f "skills/humanize-ai/assets/user-customizations.md" ]; then
+if [ -f "skills/humanizeai/assets/user-customizations.md" ]; then
   echo "Found your customizations file. It's git-ignored, so this pull won't touch it."
 else
   echo "No customizations file yet. Run scripts/setup.sh afterwards if you want one."

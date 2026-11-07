@@ -5,6 +5,18 @@
 **Added**
 - GitHub Actions workflow `release-plugin.yml` builds `humanize-ai.plugin` and attaches it to each release for a one-click download link (README).
 
+## 0.6.0: Update
+
+**Changed**
+- Renamed the router skill `humanize-ai` to `humanizeai` (folder, frontmatter name, cross-references in README, AGENTS.md, evals, scripts, .gitignore). The plugin id, repository, release file and the other three skills keep their names.
+- Standing rule (AGENTS.md): skills that run scripts copy them once per session into the working folder (e.g. `./tools/`) and run from there; never put a `/root/.claude` or `~/.claude` path in a shell command. No existing hits in this plugin.
+
+| Old | New |
+|---|---|
+| `/humanize-ai` | `/humanizeai` |
+| `/humanize-ai:humanize-ai` | `/humanize-ai:humanizeai` |
+| `skills/humanize-ai/` | `skills/humanizeai/` |
+
 ## 0.5.2: Update
 
 **Changed**

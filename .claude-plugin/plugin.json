@@ -1,7 +1,7 @@
 {
   "name": "humanize-ai",
   "displayName": "Humanize AI",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Finds AI-writing tells and rewrites text so it reads like a person wrote it, while keeping facts, names, numbers, quotes, and the writer's voice intact. Detect, rewrite, and audit in one workflow or one step at a time.",
   "author": {
     "name": "@wasimness",
@@ -29,7 +29,7 @@
   "termsOfServiceUrl": "https://syncwin.com/terms-and-conditions/",
   "metadata": {
     "displayName": "Humanize AI",
-    "version": "0.5.2",
+    "version": "0.6.0",
     "releaseStage": "beta",
     "author": "@wasimness",
     "company": "SyncWin",

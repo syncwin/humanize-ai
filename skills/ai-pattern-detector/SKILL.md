@@ -4,7 +4,7 @@ description: First stage of Humanize AI. Finds AI-writing tells in a piece of te
 license: MIT
 metadata:
   displayName: AI Pattern Detector
-  version: '0.5.2'
+  version: '0.6.0'
   author: "@wasimness"
   company: SyncWin
 ---

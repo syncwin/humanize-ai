@@ -4,7 +4,7 @@ description: Second stage of Humanize AI. Rewrites the parts of a text the detec
 license: MIT
 metadata:
   displayName: AI Pattern Remover
-  version: '0.5.2'
+  version: '0.6.0'
   author: "@wasimness"
   company: SyncWin
 ---

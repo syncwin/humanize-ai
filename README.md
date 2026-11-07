@@ -4,7 +4,7 @@ Humanize AI is a Claude plugin that finds the patterns that make a draft read as
 
 **Download:** [humanize-ai.plugin](https://github.com/syncwin/humanize-ai/releases/latest/download/humanize-ai.plugin) (always the latest release)
 
-**Version** 0.5.2 (public beta) · **Author** @wasimness · **Company** SyncWin · **Contact** support@syncwin.com · **License** MIT (Wikipedia-derived material: CC BY-SA 4.0)
+**Version** 0.6.0 (public beta) · **Author** @wasimness · **Company** SyncWin · **Contact** support@syncwin.com · **License** MIT (Wikipedia-derived material: CC BY-SA 4.0)
 
 ## Why it exists
 
@@ -44,7 +44,7 @@ Plugins added on claude.ai also sync to Claude Code (v2.1.273 or later) when you
 ## Use it
 
 ```
-/humanize-ai [paste your draft, or point to the file]
+/humanizeai [paste your draft, or point to the file]
 ```
 
 That runs the full workflow: detect, rewrite, audit. Phrasing picks a lighter mode on its own:
@@ -68,10 +68,20 @@ To run a single stage, call it directly: `/humanize-ai:ai-pattern-detector`, `/h
 
 `prompts/humanize-ai.json` is a ready-made form for [Prompt Builder](https://promptbuilder.syncwin.com/). Import it under **Settings > Import**, choose a step (Full Workflow, Detect Only, Rewrite Only, Audit Only), paste your content, and send. It's attached to each release too.
 
+### Renamed in 0.6.0
+
+| Old | New |
+|---|---|
+| `/humanize-ai` | `/humanizeai` |
+| `/humanize-ai:humanize-ai` | `/humanize-ai:humanizeai` |
+| `skills/humanize-ai/` | `skills/humanizeai/` |
+
+The plugin id, repository and the other three skills are unchanged.
+
 ## How it works
 
 ```
-/humanize-ai  (router: picks the mode and content type)
+/humanizeai  (router: picks the mode and content type)
   1. ai-pattern-detector   finds tells, tiers them, marks safe to edit or leave alone
   2. ai-pattern-remover    builds the fact-lock list, rewrites only what's safe to edit
   3. humanize-ai-auditor   dash and rhythm gates, checklist, fact-lock check, scratchpad
@@ -95,7 +105,7 @@ Every knowledge file carries a "Last verified" date. Ask "check for updates" and
 Humanize AI is Markdown instructions plus two optional shell scripts, all readable in this repository.
 
 - No network calls of its own. It has no connectors, MCP servers, hooks, or executables. It fetches something only when you ask it to check its sources. Claude then tells you which public pages it will fetch (Wikipedia, arXiv, detector vendors' documentation, Graphite's research hub, the EU AI Act text) and uses the web tools your session already has.
-- It reads the content you give it and, in local clones, an optional `skills/humanize-ai/assets/user-customizations.md`.
+- It reads the content you give it and, in local clones, an optional `skills/humanizeai/assets/user-customizations.md`.
 - It writes nothing into its own folder during a run. Suggested rule changes come back to you as text.
 - `scripts/setup.sh` and `scripts/update.sh` run only if you run them, in a local clone. They copy a template file and run `git pull --ff-only`.
 - It collects no data. SyncWin receives nothing from your use of the plugin.
